@@ -10,3 +10,4 @@ git push -u origin main
 git remote add origin https://github.com/bele-adane/Mule-batch-api.git
 git branch -M main
 git push -u origin main
+git commit -am"first commit"
