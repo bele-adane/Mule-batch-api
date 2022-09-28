@@ -11,3 +11,9 @@ git remote add origin https://github.com/bele-adane/Mule-batch-api.git
 git branch -M main
 git push -u origin main
 git commit -am"first commit"
+========================================
+**part4:From remote server:**
+
+fetch, merge or git pull
+git fetch and merge these chages in our local branch=git pull
+--> this is done if the remote repository has some change or a head of your local repository:
