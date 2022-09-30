@@ -15,3 +15,4 @@ git push -u origin main
 git commit -am"first commit"
 fetch, merge or git pull
 git fetch and merge these chages in our local branch=git pull this is done if the remote repository has some change or a head of your local repository:
+fetch + merge =git pull
