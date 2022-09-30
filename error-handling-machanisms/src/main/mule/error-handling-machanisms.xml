@@ -20,6 +20,17 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
       <logger level="ERROR" doc:name="Logger" message="#[error.description]"/>
     </on-error-continue>
   </error-handler>
+  
+-<error-handler>
+
+
+-<on-error-continue doc:name="On Error Continue" logException="true" enableNotifications="true">
+
+<logger doc:name="Logger" level="ERROR" message="#[error.description]"/>
+
+</on-error-continue>
+
+</error-handler>
 </flow>	
 	
 </mule>
