@@ -21,3 +21,6 @@ single command for fetch and merge is pull
 -fast forward merge - if there is a change only develope brach or feature branch only and master as it is.
 -3-way merge- this is during some changes apply master and develope both
 -There is Theirs-Remote vs mine -LOCAL sections 
+Two types of branch in your local system
+                        1. local branch
+						2. remote tracking branch
