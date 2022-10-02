@@ -20,3 +20,4 @@ fetch + merge =git pull
 single command for fetch and merge is pull
 -fast forward merge - if there is a change only develope brach or feature branch only and master as it is.
 -3-way merge- this is during some changes apply master and develope both
+-There is Theirs-Remote vs mine -LOCAL sections 
