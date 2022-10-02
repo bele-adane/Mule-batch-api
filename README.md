@@ -18,9 +18,15 @@ fetch, merge or git pull
 git fetch and merge these chages in our local branch=git pull this is done if the remote repository has some change or a head of your local repository:
 fetch + merge =git pull
 single command for fetch and merge is pull
+ develope
 -fast forward merge - if there is a change only develope brach or feature branch only and master as it is.
 -3-way merge- this is during some changes apply master and develope both
 -There is Theirs-Remote vs mine -LOCAL sections 
 Two types of branch in your local system
                         1. local branch
-						2. remote tracking branch
+					             	2. remote tracking branch
+
+-3-way merge- this is during some changes apply master and develope
+-There is Theirs-Remote vs mine -LOCAL 
+-There is Theirs-Remote vs mine -LOCAL sections 
+
