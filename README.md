@@ -29,5 +29,7 @@ Two types of branch in your local system
 -3-way merge- this is during some changes apply master and develope
 -There is Theirs-Remote vs mine -LOCAL 
 -There is Theirs-Remote vs mine -LOCAL sections 
+Tesfish
+-git pull is git fetch and merg
 
 
