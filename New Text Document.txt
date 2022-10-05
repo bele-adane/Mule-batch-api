@@ -1,15 +1,4 @@
-{
-"Fname":"Joseph",
-"Lname":"Jsopa",
-"age": "4"
-}
-*{
-"Fname":"Joseph",
-"Lname":"Jsopa",
-"age": "4"
-}
-
-how to create branch in the remote server 
-fetch it in the local file system make changes in the local branch and push the changes back to the remote server*
-* merge -fast forward merge
-Belete
+Git-Note:
+        -Stash is storing something safely
+		-Saving uncommited changes safely
+		
