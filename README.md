@@ -23,5 +23,6 @@ single command for fetch and merge is pull
 -There is Theirs-Remote vs mine -LOCAL sections 
 Two types of branch in your local system
                         1. local branch
-						2. remote tracking branch
+				                2. remote tracking branch
 section9: undoing local changes-by git checkout(using TortoiseGit revert option) -(git checkout/reset/revert/clean)
+prodcut owner should be involved
