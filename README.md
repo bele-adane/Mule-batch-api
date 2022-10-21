@@ -2,6 +2,7 @@
 
 …or create a new repository on the command line
 echo "# Mule-batch-api" >> README.md
+git config --global --edit
 git init
 git add README.md
 git commit -m "first commit"
