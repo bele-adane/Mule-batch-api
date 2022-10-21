@@ -13,6 +13,7 @@ git remote add origin https://github.com/bele-adane/Mule-batch-api.git
 git branch -M main
 git push -u origin main
 git commit -am"first commit"
+git cherry -v -> to check the commit message.
 git add . + git -m"first commit = git commit -am"first commit"
 fetch, merge or git pull
 git fetch and merge these chages in our local branch=git pull this is done if the remote repository has some change or a head of your local repository:
@@ -22,7 +23,7 @@ single command for fetch and merge is pull
 -3-way merge- this is during some changes apply master and develope both
 -There is Theirs-Remote vs mine -LOCAL sections 
 Two types of branch in your local system
-                        1. local branch
-				                2. remote tracking branch
+	1. local branch
+	2. remote tracking branch
 section9: undoing local changes-by git checkout(using TortoiseGit revert option) -(git checkout/reset/revert/clean)
 prodcut owner should be involved

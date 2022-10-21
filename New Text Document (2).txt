@@ -1,0 +1,8 @@
+-Stashing(saving uncommit changes)
+since work is not done yet.
+You will keep this as it is but not commit
+your changes.
+urgent needs here to commit to develope branch that is why i am switch and by stashing the current change in the other branch.
+git reset - reverts the commit from last commit states as it is 
+you will lose what ever changes you have currently.
+git reset --head
