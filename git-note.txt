@@ -1,3 +1,4 @@
 
 Learn how to: 
 create/switch or checkout/delete branch
+To create the branch we need to be on the root branch what want to create the branch on it.
