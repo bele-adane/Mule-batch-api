@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:salesforce="http://www.mulesoft.org/schema/mule/salesforce" xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core"
+	xmlns:http="http://www.mulesoft.org/schema/mule/http"
+	xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd
+http://www.mulesoft.org/schema/mule/salesforce http://www.mulesoft.org/schema/mule/salesforce/current/mule-salesforce.xsd">
+	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="a469b67d-e75d-4b9a-8eed-074af2b4be08" >
+		<http:listener-connection host="0.0.0.0" port="8081" />
+	</http:listener-config>
+	<salesforce:sfdc-config name="Salesforce_Config" doc:name="Salesforce Config" doc:id="22bc3fc5-d87c-4431-9f0c-29833aa991ca" >
+		<salesforce:basic-connection username="beleadane.m@gmail.com" securityToken="ih9XLLJzdaRgVzwAxtB0CSOF" password="sfbaty12mine"/>
+	</salesforce:sfdc-config>
+	<flow name="employeeFlow" doc:id="26e775ce-75ae-452e-9220-8f256eef914b" >
+		<http:listener doc:name="Listener" doc:id="04b27642-7d1a-48ff-a600-d65543dc4526" config-ref="HTTP_Listener_config" path="/account"/>
+		<logger level="ERROR" doc:name="Start log" doc:id="739938c9-3a95-4188-b5e4-b1cd3448046b" message="#[payload]"/>
+		<salesforce:query doc:id="bfbbbe22-007b-4d4c-b045-6c4fa321eae5" config-ref="Salesforce_Config">
+			<salesforce:salesforce-query ><![CDATA[SELECT FIELDS (ALL) FROM ACCOUNT LIMIT 3]]></salesforce:salesforce-query>
+		</salesforce:query>
+		<ee:transform doc:name="Transform Message" doc:id="0f593ca2-1100-4d55-9347-4eb0d501366d" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/json
+---
+payload]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+		<set-payload value="#[payload]" doc:name="Set Payload" doc:id="5badd3bf-6e30-47f0-b506-2665e3309ff5" />
+		<logger level="INFO" doc:name="End log" doc:id="e99c0b33-ab9a-4d87-a3a7-e0f33988311e" message='#["application process completed"]'/>
+	</flow>
+</mule>
