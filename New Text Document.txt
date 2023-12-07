@@ -1,15 +1,11 @@
-{
-"Fname":"Joseph",
-"Lname":"Jsopa",
-"age": "4"
-}
-*{
-"Fname":"Joseph",
-"Lname":"Jsopa",
-"age": "4"
-}
-
-how to create branch in the remote server 
-fetch it in the local file system make changes in the local branch and push the changes back to the remote server*
-* merge -fast forward merge
-Tesfu
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evangadi class code</title>
+</head>
+<body>
+    
+</body>
+</html>
